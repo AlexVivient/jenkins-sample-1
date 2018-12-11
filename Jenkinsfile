@@ -15,7 +15,10 @@ node () {
 			} else { 
  				bat "mvn clean package " 
 			} 
- 		} 
+ 		}
+	withMaven(maven: 'maven-3.5.4') { 
+ 			sh "mvn sonar:sonar " 
+			}	
 	}
 	stage ('App-IC - Post build actions') {
 /*
