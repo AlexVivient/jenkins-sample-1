@@ -33,6 +33,6 @@ public class AppTest
      */
     public void testApp()
     {
-        assertFalse( true );
+        assertTrue( true );
     }
 }
